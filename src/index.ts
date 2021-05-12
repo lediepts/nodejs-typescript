@@ -22,7 +22,7 @@ if (!process.env.PORT) {
 const PORT: number = parseInt(process.env.PORT as string, 10);
 const accessLogStream = rfs.createStream("access.log", {
   interval: "1h", // rotate daily
-  path: path.join(__dirname, "log"),
+  path: path.join(process.cwd(), "log"),
 });
 const app = express();
 /**
