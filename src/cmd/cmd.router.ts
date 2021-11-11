@@ -17,7 +17,6 @@ cmdRouter.get("/", async (req: Request, res: Response) => {
     const rs = await CmdService.run();
     res.status(200).send(rs);
   } catch (e) {
-    console.log(e);
-    res.status(500).send(e.message);
+    res.status(500).send((e as any).message);
   }
 });
