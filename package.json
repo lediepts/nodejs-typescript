@@ -8,14 +8,19 @@
     "build": "tsc"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "form-data": "^4.0.0",
     "helmet": "^4.5.0",
     "mongoose": "^5.12.8",
     "morgan": "^1.10.0",
+    "pdfkit": "^0.13.0",
     "rotating-file-stream": "^2.1.5",
-    "socket.io": "^4.3.2"
+    "socket.io": "^4.3.2",
+    "winston": "^3.4.0",
+    "winston-daily-rotate-file": "^4.6.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
@@ -25,6 +30,7 @@
     "@types/mongoose": "^5.10.5",
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.0.1",
+    "@types/pdfkit": "^0.12.3",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"
   }
